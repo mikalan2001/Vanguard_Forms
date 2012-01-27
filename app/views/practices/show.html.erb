@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @practice.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @practice.user_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @practice.description %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @practice.image_id %>
+</p>
+
+<p>
+  <b>Cached slug:</b>
+  <%= @practice.cached_slug %>
+</p>
+
+
+<%= link_to 'Edit', edit_practice_path(@practice) %> |
+<%= link_to 'Back', practices_path %>

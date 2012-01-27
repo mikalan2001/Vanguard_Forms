@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Login:</b>
+  <%= @user.login %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Crypted password:</b>
+  <%= @user.crypted_password %>
+</p>
+
+<p>
+  <b>Password salt:</b>
+  <%= @user.password_salt %>
+</p>
+
+<p>
+  <b>Persistence token:</b>
+  <%= @user.persistence_token %>
+</p>
+
+<p>
+  <b>Perishable token:</b>
+  <%= @user.perishable_token %>
+</p>
+
+<p>
+  <b>Is admin:</b>
+  <%= @user.is_admin %>
+</p>
+
+<p>
+  <b>Is provider:</b>
+  <%= @user.is_provider %>
+</p>
+
+<p>
+  <b>Is patient:</b>
+  <%= @user.is_patient %>
+</p>
+
+<p>
+  <b>Accepted tos:</b>
+  <%= @user.accepted_tos %>
+</p>
+
+<p>
+  <b>Activation code:</b>
+  <%= @user.activation_code %>
+</p>
+
+<p>
+  <b>Wants newsletter:</b>
+  <%= @user.wants_newsletter %>
+</p>
+
+<p>
+  <b>Is active:</b>
+  <%= @user.is_active %>
+</p>
+
+<p>
+  <b>Is blocked:</b>
+  <%= @user.is_blocked %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @user.notes %>
+</p>
+
+<p>
+  <b>Phone1:</b>
+  <%= @user.phone1 %>
+</p>
+
+<p>
+  <b>Phone2:</b>
+  <%= @user.phone2 %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

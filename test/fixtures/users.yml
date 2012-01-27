@@ -1,0 +1,39 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  login: MyString
+  email: MyString
+  crypted_password: MyString
+  password_salt: MyString
+  persistence_token: MyString
+  perishable_token: MyString
+  is_admin: false
+  is_provider: false
+  is_patient: false
+  accepted_tos: false
+  activation_code: MyString
+  wants_newsletter: false
+  is_active: false
+  is_blocked: false
+  notes: MyText
+  phone1: MyString
+  phone2: MyString
+
+two:
+  login: MyString
+  email: MyString
+  crypted_password: MyString
+  password_salt: MyString
+  persistence_token: MyString
+  perishable_token: MyString
+  is_admin: false
+  is_provider: false
+  is_patient: false
+  accepted_tos: false
+  activation_code: MyString
+  wants_newsletter: false
+  is_active: false
+  is_blocked: false
+  notes: MyText
+  phone1: MyString
+  phone2: MyString

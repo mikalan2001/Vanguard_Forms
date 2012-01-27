@@ -1,0 +1,85 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :login %><br />
+    <%= f.text_field :login %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :crypted_password %><br />
+    <%= f.text_field :crypted_password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_salt %><br />
+    <%= f.text_field :password_salt %>
+  </div>
+  <div class="field">
+    <%= f.label :persistence_token %><br />
+    <%= f.text_field :persistence_token %>
+  </div>
+  <div class="field">
+    <%= f.label :perishable_token %><br />
+    <%= f.text_field :perishable_token %>
+  </div>
+  <div class="field">
+    <%= f.label :is_admin %><br />
+    <%= f.check_box :is_admin %>
+  </div>
+  <div class="field">
+    <%= f.label :is_provider %><br />
+    <%= f.check_box :is_provider %>
+  </div>
+  <div class="field">
+    <%= f.label :is_patient %><br />
+    <%= f.check_box :is_patient %>
+  </div>
+  <div class="field">
+    <%= f.label :accepted_tos %><br />
+    <%= f.check_box :accepted_tos %>
+  </div>
+  <div class="field">
+    <%= f.label :activation_code %><br />
+    <%= f.text_field :activation_code %>
+  </div>
+  <div class="field">
+    <%= f.label :wants_newsletter %><br />
+    <%= f.check_box :wants_newsletter %>
+  </div>
+  <div class="field">
+    <%= f.label :is_active %><br />
+    <%= f.check_box :is_active %>
+  </div>
+  <div class="field">
+    <%= f.label :is_blocked %><br />
+    <%= f.check_box :is_blocked %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :phone1 %><br />
+    <%= f.text_field :phone1 %>
+  </div>
+  <div class="field">
+    <%= f.label :phone2 %><br />
+    <%= f.text_field :phone2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
